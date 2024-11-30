@@ -12,3 +12,6 @@
 
 # output
 /out
+
+# ds_store
+.Ds_Store
