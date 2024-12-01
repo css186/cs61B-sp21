@@ -46,6 +46,8 @@ public class IntList {
         return p.first;
     }
 
+    
+
     public static void main(String[] args) {
         IntList L = new IntList(15, null);
         L = new IntList(10, L);
