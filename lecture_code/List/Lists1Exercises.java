@@ -1,16 +1,18 @@
+package List;
+
 public class Lists1Exercises {
     /**
      * Returns an IntList identical to L, but with
      * each element incremented by x. L is not allowed
      * to change.
      */
-    public static IntList incrList(IntList L, int x) {
+    public static List.IntList incrList(List.IntList L, int x) {
         /* Your code here. */
-        IntList Q = new IntList(L.first + x, null);
-        IntList q = Q;
-        IntList p = L.rest;
+        List.IntList Q = new List.IntList(L.first + x, null);
+        List.IntList q = Q;
+        List.IntList p = L.rest;
         while (p != null) {
-            q.rest = new IntList(p.first + x, null);
+            q.rest = new List.IntList(p.first + x, null);
             p = p.rest;
             q = q.rest;
         }
@@ -23,9 +25,9 @@ public class Lists1Exercises {
      * each element incremented by x. Not allowed to use
      * the 'new' keyword.
      */
-    public static IntList dincrList(IntList L, int x) {
+    public static List.IntList dincrList(List.IntList L, int x) {
         /* Your code here. */
-        IntList p = L;
+        List.IntList p = L;
 
         while (p != null) {
             p.first += x;
@@ -36,9 +38,9 @@ public class Lists1Exercises {
     }
 
     public static void main(String[] args) {
-        IntList L = new IntList(5, null);
-        L.rest = new IntList(7, null);
-        L.rest.rest = new IntList(9, null);
+        List.IntList L = new List.IntList(5, null);
+        L.rest = new List.IntList(7, null);
+        L.rest.rest = new List.IntList(9, null);
 
         System.out.println(L.size());
         System.out.println(L.iterativeSize());
