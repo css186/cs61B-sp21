@@ -95,4 +95,10 @@ public class DLList<T> {
         return curr.item;
     }
 
+    public void print() {
+        for (ListNode<T> p = sentinel.next; p != null; p = p.next) {
+            System.out.print(p.item + " ");
+        }
+        System.out.println();
+    }
 }
