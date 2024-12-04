@@ -134,4 +134,12 @@ public class ArrayDeque<T> {
         return items[(end - 1 + items.length) % items.length];
     }
 
+    public T get(int index) {
+        // out of bounds
+        if (index < 0 || index >= size) {
+            return null;
+        }
+        return items[(start + index) % items.length];
+    }
+
 }
