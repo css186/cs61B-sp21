@@ -5,6 +5,7 @@ public class VengefullSLList<T> extends SLList<T> {
     SLList<T> deletedItems;
 
     public VengefullSLList() {
+        // super(); this line must come first, but it is automatically added by the compiler
         deletedItems = new SLList<>();
     }
 
