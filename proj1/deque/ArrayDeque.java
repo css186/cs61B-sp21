@@ -49,7 +49,7 @@ public class ArrayDeque<T> {
 
     public void addFirst(T item) {
         if (size == items.length) {
-            resize(size * 2);
+            resize(items.length * 2);
         }
         // update start pointer first
         // Note: we need to make sure the index is non-negative
@@ -62,7 +62,7 @@ public class ArrayDeque<T> {
 
     public void addLast(T item) {
         if (size == items.length) {
-            resize(size * 2);
+            resize(items.length * 2);
         }
         items[end] = item;
 
